@@ -30,6 +30,7 @@ let package = Package(
                 ? [
                     .enableExperimentalFeature("Embedded"),
                     .enableExperimentalFeature("Extern"),
+                    .enableExperimentalFeature("SymbolLinkageMarkers"),
                     .unsafeFlags(["-Xfrontend", "-emit-empty-object-file"]),
                 ] : nil
         ),
